@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://VINNE7.github.io/prj-extensao-vinne/",
+  "homepage": "https://VINNE7.github.io/descarte-consciente/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
