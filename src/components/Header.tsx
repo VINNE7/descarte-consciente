@@ -39,7 +39,7 @@ export function AppHeader() {
         <Group justify="space-between" align="center">
           <Group gap="xs">
             <Image
-              src="/medicine-icon.svg"
+              src="/descarte-consciente/medicine-icon.svg"
               alt="Medicine Icon"
               width={32}
               height={32}
