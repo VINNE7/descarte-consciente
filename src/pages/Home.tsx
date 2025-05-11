@@ -62,7 +62,7 @@ export default function Home() {
               </Button>
             </div>
             <Image
-              src="/medicine-disposal.jpg"
+              src="/descarte-consciente/medicine-disposal.jpg"
               alt="Descarte de medicamentos"
               radius="md"
               fallbackSrc="https://placehold.co/600x400"
@@ -75,13 +75,26 @@ export default function Home() {
       <Section id="impacto" title="Impacto do Descarte Consciente">
         <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="md">
           {impactCards.map((card) => (
-            <Card key={card.title} shadow="sm" padding="lg" radius="md" withBorder>
+            <Card
+              key={card.title}
+              shadow="sm"
+              padding="lg"
+              radius="md"
+              withBorder
+            >
               <Stack gap="sm">
                 <Group align="center">
-                  <ThemeIcon size="lg" radius="md" variant="light" color={card.color}>
+                  <ThemeIcon
+                    size="lg"
+                    radius="md"
+                    variant="light"
+                    color={card.color}
+                  >
                     {card.title[0]}
                   </ThemeIcon>
-                  <Text fw={500} style={{ lineHeight: 1 }}>{card.title}</Text>
+                  <Text fw={500} style={{ lineHeight: 1 }}>
+                    {card.title}
+                  </Text>
                 </Group>
                 <Text size="sm" c="dimmed">
                   {card.description}
@@ -100,9 +113,10 @@ export default function Home() {
       >
         <Container size="lg">
           <Text size="lg" mb="xl">
-            O descarte incorreto de medicamentos é uma prática comum, mas extremamente nociva. 
-            Jogar medicamentos no lixo comum ou no vaso sanitário libera substâncias químicas perigosas, 
-            contaminando o solo, a água e ameaçando a saúde pública.
+            O descarte incorreto de medicamentos é uma prática comum, mas
+            extremamente nociva. Jogar medicamentos no lixo comum ou no vaso
+            sanitário libera substâncias químicas perigosas, contaminando o
+            solo, a água e ameaçando a saúde pública.
           </Text>
           <SimpleGrid cols={{ base: 1, md: 2 }} spacing="xl">
             <Card shadow="sm" padding="lg" radius="md" withBorder>
@@ -135,10 +149,12 @@ export default function Home() {
       <Section id="lei" title="A Lei e Pontos de Descarte">
         <Container size="lg">
           <Text size="lg" mb="xl">
-            Em Cuiabá, a Lei Municipal nº 5.678/13, sancionada em agosto de 2013 pelo então prefeito Mauro Mendes 
-            (atual governador do estado de Mato Grosso), foi criada com o objetivo de regulamentar o descarte adequado 
-            de medicamentos. A autoria da lei é do vereador Marcrean Santos, que destacou a preocupação com a proteção 
-            dos lençóis freáticos e a preservação do meio ambiente.
+            Em Cuiabá, a Lei Municipal nº 5.678/13, sancionada em agosto de 2013
+            pelo então prefeito Mauro Mendes (atual governador do estado de Mato
+            Grosso), foi criada com o objetivo de regulamentar o descarte
+            adequado de medicamentos. A autoria da lei é do vereador Marcrean
+            Santos, que destacou a preocupação com a proteção dos lençóis
+            freáticos e a preservação do meio ambiente.
           </Text>
           <SimpleGrid cols={{ base: 1, md: 2 }} spacing="xl">
             <Card shadow="sm" padding="lg" radius="md" withBorder>
@@ -161,7 +177,10 @@ export default function Home() {
                 <li>Multas de R$ 1.000 a R$ 100.000</li>
                 <li>Valores dobrados em caso de reincidência</li>
                 <li>Penalidades diárias por irregularidades persistentes</li>
-                <li>Responsabilidade compartilhada entre fabricantes e distribuidores</li>
+                <li>
+                  Responsabilidade compartilhada entre fabricantes e
+                  distribuidores
+                </li>
               </ul>
             </Card>
           </SimpleGrid>
